@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slides</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main id="deck">
+
+    <!-- One slide is shown at a time. app.js fills it from slides.js -->
+    <section id="slide" class="slide">
+      <div class="photo">
+        <div class="photo-bg" id="photo-bg"></div>
+        <img id="photo-img" alt="">
+      </div>
+
+      <div class="caption">
+        <div class="ticket" aria-hidden="true">
+          <span class="ticket-label">No.</span>
+          <span class="ticket-num" id="ticket-num">01</span>
+        </div>
+        <div class="caption-text">
+          <h2 id="slide-title"></h2>
+          <p id="slide-text"></p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="controls">
+      <button id="prev" class="nav-btn" aria-label="Previous slide">←</button>
+      <div class="progress"><div class="progress-bar" id="progress-bar"></div></div>
+      <button id="next" class="nav-btn" aria-label="Next slide">→</button>
+    </nav>
+
+  </main>
+
+  <!-- slides.js = your content (edit this one!) -->
+  <!-- app.js    = the logic (no need to edit) -->
+  <script src="slides.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
