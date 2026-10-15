@@ -10,7 +10,6 @@ const photoImg    = document.getElementById("photo-img");
 const photoBg     = document.getElementById("photo-bg");
 const titleEl     = document.getElementById("slide-title");
 const textEl      = document.getElementById("slide-text");
-const ticketNum   = document.getElementById("ticket-num");
 const progressBar = document.getElementById("progress-bar");
 const prevBtn     = document.getElementById("prev");
 const nextBtn     = document.getElementById("next");
@@ -50,7 +49,6 @@ function show(i, dir) {
   textEl.hidden = !s.text;
 
   // Counter, progress bar, buttons
-  ticketNum.textContent = pad(index + 1);
   progressBar.style.width = ((index + 1) / SLIDES.length) * 100 + "%";
   prevBtn.disabled = index === 0;
   nextBtn.textContent = index === last ? "↺" : "→";
