@@ -105,7 +105,7 @@ const SLIDES = [
 
   {
     title: "The End",
-    text: "Thanks you my Joujou. Thank you for reading this all, thank you for having come to my recue after my surgery, thank you for these wonderful years ❤️."
+    text: "Thanks you my Joujou. Thank you for having come to my rescue after my surgery, thank you for having introduced me to confiture du lait, thank you for these amazing four years ❤️. Love you more than dear life 😘."
   }
 
 ];
